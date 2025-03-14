@@ -1,1 +1,86 @@
+/* ================================= */
+/* Global AOS Settings (Smoother Transitions) */
+/* ================================= */
 
+[data-aos] {
+  transition-duration: 0.8s !important; /* Smooth but noticeable */
+  transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1) !important; /* Bouncy, premium feel */
+  opacity: 0;
+}
+
+/* ================================= */
+/* FADE UP - Sleek Vertical Entrance */
+/* ================================= */
+
+[data-aos="fade-up"] {
+  transform: translateY(40px);
+}
+
+[data-aos="fade-up"].aos-animate {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ================================= */
+/* ZOOM IN - Smooth & Subtle Scaling */
+/* ================================= */
+
+[data-aos="zoom-in"] {
+  transform: scale(0.9);
+}
+
+[data-aos="zoom-in"].aos-animate {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* ================================= */
+/* FLIP LEFT - Elegant Perspective */
+/* ================================= */
+
+[data-aos="flip-left"] {
+  transform: perspective(1000px) rotateY(-15deg);
+}
+
+[data-aos="flip-left"].aos-animate {
+  transform: perspective(1000px) rotateY(0);
+  opacity: 1;
+}
+
+/* ================================= */
+/* GRID ITEMS - Staggered Appearance */
+/* ================================= */
+
+/* This makes portfolio items appear one after another */
+.portfolio-item:nth-child(1) [data-aos] { transition-delay: 0.1s; }
+.portfolio-item:nth-child(2) [data-aos] { transition-delay: 0.2s; }
+.portfolio-item:nth-child(3) [data-aos] { transition-delay: 0.3s; }
+.portfolio-item:nth-child(4) [data-aos] { transition-delay: 0.4s; }
+.portfolio-item:nth-child(5) [data-aos] { transition-delay: 0.5s; }
+
+/* ================================= */
+/* HEADINGS & TITLES - Slight Rotation */
+/* ================================= */
+
+[data-aos="fade-up-title"] {
+  transform: translateY(30px) rotate(-2deg);
+}
+
+[data-aos="fade-up-title"].aos-animate {
+  transform: translateY(0) rotate(0);
+  opacity: 1;
+}
+
+/* ================================= */
+/* BUTTONS - Pop Effect on Hover */
+/* ================================= */
+
+.button-hover-effect {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.button-hover-effect:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
