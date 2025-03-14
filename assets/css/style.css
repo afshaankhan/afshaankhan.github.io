@@ -1,0 +1,82 @@
+/**
+* Template Name: iPortfolio - v1.4.0
+* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #272829;
+  background-color: #f8f9fa; /* Slightly adjusted background for softer contrast */
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #1a73e8; /* Google blue for modern look */
+}
+
+a:hover {
+  color: #0f5dc8;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: #050c1a; /* Darker shade for a modern touch */
+}
+
+#header .profile img {
+  border: 6px solid #2e344e;
+}
+
+#header .profile .social-links a:hover {
+  background: #1a73e8;
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  background: url("../img/hero-bg.jpeg") center center;
+  background-size: cover;
+  background-position: center 75%; /* Adjusted focus for better subject framing */
+}
+
+#hero:before {
+  background: rgba(5, 13, 24, 0.4); /* Slightly stronger overlay for contrast */
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+.nav-menu a:hover, .nav-menu .active > a {
+  color: #ffffff;
+  background: #1a73e8;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/*--------------------------------------------------------------
+# Skills Section
+--------------------------------------------------------------*/
+.skills li:hover {
+  background-color: #e8f0fe; /* Softer hover effect */
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: #050c1a;
+}
